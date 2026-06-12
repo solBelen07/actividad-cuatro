@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <section class="seccion-formulario">
+            <form  id="formulario-datos" action="resultado.html" method="get">
+                    <h1>FORMULARIO</h1>
+                    <div class="datos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="5" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="Ingresa tu email" id="email" name="email" required>
+
+                    <label for="edad">Edad:</label>
+                    <input id="edad" name="edad" type="number" min="18" max="60" required>
+
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Seleccioná un país</option>
+                        <option value="ar">Argentina</option>
+                        <option value="br">Brasil</option>
+                        <option value="cl">Chile</option>
+                        <option value="uy">Uruguay</option>
+                        <option value="mx">México</option>
+                    </select>
+                    </div>
+                    <div class="terminos-condiciones">
+                    <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
+                     Acepto terminos y condiciones
+                    </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
