@@ -55,3 +55,22 @@ button{
 button:hover{
     background-color: rgb(170, 170, 155);
 }
+
+#resultado{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#datos{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#datos p{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
