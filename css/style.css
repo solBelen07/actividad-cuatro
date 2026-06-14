@@ -6,28 +6,33 @@
 }
 
 body{
-    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3e7ff, #e4f0ff);
 }
 
 .seccion-formulario{
-    height: 100vh;
-    
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.seccion-formulario form{
-    width: 40%;
+.seccion-formulario form,
+#resultado{
+    width: 450px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.terminos-condiciones{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 0.5em;
+h1{
+    text-align: center;
+    color: #6c63ff;
+    margin-bottom: 10px;
 }
 
 .datos{
@@ -36,41 +41,57 @@ body{
     gap: 1em;
 }
 
-.datos input,
-.datos select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
+.datos label{
+    font-weight: 600;
+    color: #444;
 }
 
+.datos input,
+.datos select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    font-size: 15px;
+}
 
+.datos input:focus,
+.datos select:focus{
+    outline: none;
+    border-color: #6c63ff;
+}
+
+.terminos-condiciones{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 button{
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover{
-    background-color: rgb(170, 170, 155);
-}
-
-#resultado{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+    background-color: #5548e5;
 }
 
 #datos{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 10px;
 }
 
 #datos p{
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    background-color: #f8f8ff;
+    border-left: 4px solid #6c63ff;
+    border-radius: 8px;
 }
