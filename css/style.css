@@ -6,33 +6,28 @@
 }
 
 body{
-    min-height: 100vh;
-    background: linear-gradient(135deg, #f3e7ff, #e4f0ff);
+    height: 100%;
 }
 
 .seccion-formulario{
-    min-height: 100vh;
+    height: 100vh;
+    
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.seccion-formulario form,
-#resultado{
-    width: 450px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.seccion-formulario form{
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-h1{
-    text-align: center;
-    color: #6c63ff;
-    margin-bottom: 10px;
+.terminos-condiciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5em;
 }
 
 .datos{
@@ -41,57 +36,22 @@ h1{
     gap: 1em;
 }
 
-.datos label{
-    font-weight: 600;
-    color: #444;
-}
-
 .datos input,
-.datos select{
+.datos select {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #d4d4d4;
-    border-radius: 8px;
-    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.datos input:focus,
-.datos select:focus{
-    outline: none;
-    border-color: #6c63ff;
-}
 
-.terminos-condiciones{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
 button{
     width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background-color: #6c63ff;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
 button:hover{
-    background-color: #5548e5;
-}
-
-#datos{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#datos p{
-    padding: 12px;
-    background-color: #f8f8ff;
-    border-left: 4px solid #6c63ff;
-    border-radius: 8px;
+    background-color: rgb(170, 170, 155);
 }
