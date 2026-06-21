@@ -9,20 +9,23 @@
 <body>
     <main>
         <section class="seccion-formulario">
-            <form  id="formulario-datos" action="resultado.html" method="get">
+            <form  id="formulario-datos" action="resultado.html" method="get" novalidate>
                     <h1>FORMULARIO</h1>
                     <div class="datos">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" minlength="5" maxlength="5" pattern="[A-Za-z]{5}" required>
+                    <input type="text" id="nombre" name="nombre">
+                    <p id="error-nombre" class="error"></p>
 
                     <label for="email">E-mail:</label>
-                    <input type="email" placeholder="Ingresa tu email" id="email" name="email" required>
+                    <input type="email" placeholder="Ingresa tu email" id="email" name="email" >
+                    <p id="error-email" class="error"></p>
 
                     <label for="edad">Edad:</label>
-                    <input id="edad" name="edad" type="number" min="18" max="60" required>
+                    <input id="edad" name="edad" type="number">
+                    <p id="error-edad" class="error"></p>
 
                     <label for="pais">País:</label>
-                    <select id="pais" name="pais" required>
+                    <select id="pais" name="pais" >
                         <option value="">Seleccioná un país</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Brasil">Brasil</option>
@@ -30,15 +33,17 @@
                         <option value="Uruguay">Uruguay</option>
                         <option value="México">México</option>
                     </select>
+                    <p id="error-pais" class="error"></p>
                     </div>
                     <div class="terminos-condiciones">
-                    <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
+                    <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones">
                      Acepto terminos y condiciones
+                    <p id="error-terminos-condiciones" class="error"></p>
                     </div>
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
-    
+    <script src="index.js"></script>
 </body>
 </html>
